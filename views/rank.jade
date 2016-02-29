@@ -1,0 +1,20 @@
+extends _layout
+include nav-mixins
+
+block body
+	div.page.rank
+		+listItem("#1","Bobb-McCulloch","/dorm?name=Bobb-McCulloch")
+		+listItem("#2","Elder","/dorm?name=Elder")
+		+listItem("#3","Foster-Walker Complex","/dorm?name=Foster-Walker Complex")
+		+listItem("#4","1856 Orrington Ave","/dorm?name=1856 Orrington Ave")
+		+listItem("#5","Green House","/dorm?name=Green House")
+		+listItem("#6","1835 Hinman","/dorm?name=1835 Hinman")
+		+listItem("#7","Allison","/dorm?name=Allison")
+		+listItem("#8","Sargent Hall","/dorm?name=Sargent Hall")
+		+listItem("#9","Kemper Hall","/dorm?name=Kemper Hall")
+		+listItem("#10","Goodrich","/dorm?name=Goodrich")
+		+listItem("#11","Lingren House","/dorm?name=Lingren House")
+
+
+block nav
+	+nav('rank')

@@ -1,0 +1,19 @@
+mixin nav(activeTitle)
+	each item in [{"name":"profile","icon":"fa-user","link":"/"},{"name":"rank","icon":"fa-trophy","link":"/rank"},{"name":"social","icon":"fa-users","link":"/social"}]
+		if item["name"] == activeTitle
+			a(href=item['link'])
+				div.nav-item.active
+					i.fa(class=item['icon'])
+		else
+			a(href=item['link'])
+				div.nav-item
+					i.fa(class=item['icon'])
+
+mixin listItem(rank,name,link)
+	a(href=link)
+		div.row
+			div.list-item-name
+				div.rank-num= rank
+				div= name
+			div.list-item-chev
+				i.fa.fa-chevron-right

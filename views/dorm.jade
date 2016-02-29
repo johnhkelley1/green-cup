@@ -1,0 +1,15 @@
+extends _layout
+include nav-mixins
+
+block body
+  div.page.profile
+    p.welcome= dorm
+    div.label This Week's Energy Usage (kWh)
+    div.chart-container
+      #energy-chart.chart
+    div.label This Week's Water Usage (Gallons)
+    div.chart-container
+      #water-chart.chart
+
+block nav
+  +nav('rank')

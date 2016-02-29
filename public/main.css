@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700");
+body {
+  color: #727272;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+body a {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.container {
+  width: 298px;
+  height: 591px;
+  background-image: url("iphone.png");
+  background-size: 298px 591px;
+  position: relative;
+}
+.container .main-content {
+  font-weight: 300;
+  position: absolute;
+  top: 110px;
+  left: 15px;
+  width: 271px;
+  height: 354px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+.container .nav {
+  position: absolute;
+  bottom: 77px;
+  left: 15px;
+  width: 271px;
+  height: 50px;
+  padding: none;
+  border-top: 1px solid #ccc;
+}
+.container .header {
+  position: absolute;
+  height: 40px;
+  width: 271px;
+  top: 70px;
+  left: 15px;
+  background-color: #27ae60;
+  line-height: 40px;
+  padding: none;
+  text-align: center;
+  color: #fff;
+}
+.page {
+  padding: 0 10px 0 10px;
+}
+.page.profile {
+  padding: 0 10px 10px 10px;
+}
+.welcome {
+  font-weight: 500;
+  text-align: center;
+}
+.page.rank {
+  padding: 0 0 0 0;
+}
+.page.rank .row {
+  padding: 0 10px 0 10px;
+  line-height: 40px;
+  height: 40px;
+  width: calc(100% - 20px);
+  border-bottom: 1px solid #ccc;
+}
+.page.rank .row div {
+  display: inline-block;
+}
+.page.rank .row .list-item-name {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page.rank .row .list-item-name .rank-num {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.page.rank .row .list-item-chev {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 20%;
+  text-align: right;
+}
+.nav-item {
+  display: inline-block;
+  width: calc(100% / 3 - 1px);
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  color: #727272;
+}
+.nav-item.active {
+  color: #3498db;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.label {
+  font-size: 12px;
+  font-weight: 700;
+}
+.chart-container {
+  height: 137px;
+  overflow-y: hidden;
+}
+.chart {
+  width: 100%;
+  height: 150px;
+}
+.social-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+.social-btn i {
+  margin-right: 5px;
+}
+.social-btn.facebook-btn {
+  background-color: #3b5998;
+}
+.social-btn.twitter-btn {
+  background-color: #00aced;
+}
+.social-btn:focus {
+  outline: none;
+}

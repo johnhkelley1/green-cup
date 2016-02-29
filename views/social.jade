@@ -1,0 +1,16 @@
+extends _layout
+include nav-mixins
+
+block body
+	div.page.social
+		p.welcome Share your progress to spread awareness!
+		button.social-btn.facebook-btn
+			i.fa.fa-facebook
+			span Share on Facebook
+		button.social-btn.twitter-btn
+			i.fa.fa-twitter
+			span Share on Twitter
+
+
+block nav
+	+nav('social')
